@@ -6,7 +6,22 @@
 // "Nova" geeft "Hoi Nova!"
 // "Nick" geeft "Hoi Nick!"
 
+function groet (naam){
+    console.log("hoi " + naam);
+}
+groet ("Nova");
+groet("Nick");
 
+function greeting(name){
+    let greeting = "hoi " + name;
+    return name;
+}
+
+let emailtext = greeting("Sjaak ") + "wil jij ook lid worden?"
+console.log(emailtext);
+
+const emailtext2 = greeting("Keanu ") + "wil jij ook lid worden?"
+console.log(emailtext2);
 
 /* Opdracht 2 */
 // Schrijf een functie die een hoeveelheid minuten verwacht (als een getal) en teruggeeft
@@ -16,6 +31,19 @@
 // 3 geeft 180
 // 23 geeft 1840
 
+function time(minuten){
+    const time = minuten * 60;
+    return time;
+}
+
+const time1 = time(1);
+console.log(time1);
+
+const time2 = time(3);
+console.log(time2);
+
+const time3 = time(23)
+console.log(time3);
 
 
 /* Opdracht 3 */
@@ -26,8 +54,20 @@
 // 0 geeft false
 // 300 geeft true
 
+function biggerThenNull(number1){
+       const uitkomst = number1 > 0;
+       return uitkomst;
+}
+const uitkomst1 = biggerThenNull(-3);
+console.log(uitkomst1);
 
+const uitkomst2 = biggerThenNull(0);
+console.log(uitkomst2);
 
+const uitkomst3 = biggerThenNull(300);
+console.log(uitkomst3);
+
+console.log("=====================");
 /* Opdracht 4 */
 // Schrijf een functie die twee getallen verwacht en teruggeeft of ze, opgetelt, gróter zijn dan 100.
 // ---- Verwachte uitkomsten:
@@ -35,7 +75,18 @@
 // 8 en 92 geeft false
 // 89 en 14 geeft true
 
+function oefeningVier (getal1, getal2){
+    const addNumbers = getal1 + getal2 > 100;
+    return addNumbers;
+}
+const output1 = oefeningVier(1,23);
+const output2 = oefeningVier(8, 92);
+const output3 = oefeningVier(89, 14);
 
+console.log(output1, output2, output3);
+
+
+console.log("======================")
 
 /* Opdracht 5 */
 // Schrijf een functie die een array van strings verwacht. Hoe lang die array is, weet je niet van tevoren,
@@ -45,6 +96,28 @@
 // ---- Verwachte uitkomsten:
 // ["abra", "cadabra"] geeft "abracadabra"
 // ["a", "b", "c", "d", "e"] geeft "abcde"
+
+// [] - maak een functie aan
+// [] - roep de functie aan
+// [] - definieer de parameters
+// [] - geef argumenten mee
+// [] - tel de getallen op operators
+// [] - laat de functie een waarde returnen
+// [] - logggen
+
+function joinstring (stringArray) {
+    let outputString = "";
+    for (let index = 0; index < stringArray.length; index++) ; {
+        const string = stringArray.length;
+        outputString = outputString + string;
+    }
+
+    return outputString;
+}
+
+const outputAbra = joinstring(["abra", "cadabra"]);
+console.log(outputAbra);
+
 
 
 
@@ -57,6 +130,30 @@
 // ---- Verwachte uitkomsten:
 // "koekje" geeft "ejkeok"
 // "vrienden" geeft "nedneirv"
+
+    function reverseString1 (string){
+        const splitString = string.split("")
+        const reverseString = splitString.reverse();
+        const joinArray = reverseString.join("");
+
+    }
+    reverseString1("koekje");
+
+    // OF
+
+function reverseString2(string){
+    let newString = "";
+
+    for (let i = string.length -1; i >= 0; i--) {
+   newString = newString + string[i];
+    }
+
+    return newString;
+}
+const output = reverseString2("koekje");
+console.log(output);
+
+
 
 
 
