@@ -7,7 +7,7 @@
 // "Nick" geeft "Hoi Nick!"
 
 function groet (naam){
-    console.log("hoi " + naam);
+    // console.log("hoi " + naam);
 }
 groet ("Nova");
 groet("Nick");
@@ -18,10 +18,10 @@ function greeting(name){
 }
 
 let emailtext = greeting("Sjaak ") + "wil jij ook lid worden?"
-console.log(emailtext);
+// console.log(emailtext);
 
 const emailtext2 = greeting("Keanu ") + "wil jij ook lid worden?"
-console.log(emailtext2);
+// console.log(emailtext2);
 
 /* Opdracht 2 */
 // Schrijf een functie die een hoeveelheid minuten verwacht (als een getal) en teruggeeft
@@ -37,13 +37,13 @@ function time(minuten){
 }
 
 const time1 = time(1);
-console.log(time1);
+// console.log(time1);
 
 const time2 = time(3);
-console.log(time2);
+// console.log(time2);
 
 const time3 = time(23)
-console.log(time3);
+// console.log(time3);
 
 
 /* Opdracht 3 */
@@ -55,17 +55,16 @@ console.log(time3);
 // 300 geeft true
 
 function biggerThenNull(number1){
-       const uitkomst = number1 > 0;
-       return uitkomst;
+       return uitkomst = number1 > 0;
 }
 const uitkomst1 = biggerThenNull(-3);
-console.log(uitkomst1);
+// console.log(uitkomst1);
 
 const uitkomst2 = biggerThenNull(0);
-console.log(uitkomst2);
+// console.log(uitkomst2);
 
 const uitkomst3 = biggerThenNull(300);
-console.log(uitkomst3);
+// console.log(uitkomst3);
 
 console.log("=====================");
 /* Opdracht 4 */
@@ -83,7 +82,7 @@ const output1 = oefeningVier(1,23);
 const output2 = oefeningVier(8, 92);
 const output3 = oefeningVier(89, 14);
 
-console.log(output1, output2, output3);
+// console.log(output1, output2, output3);
 
 
 console.log("======================")
@@ -116,7 +115,7 @@ function joinstring (stringArray) {
 }
 
 const outputAbra = joinstring(["abra", "cadabra"]);
-console.log(outputAbra);
+// console.log(outputAbra);
 
 
 
@@ -134,12 +133,15 @@ console.log(outputAbra);
     function reverseString1 (string){
         const splitString = string.split("")
         const reverseString = splitString.reverse();
-        const joinArray = reverseString.join("");
+        return joinArray = reverseString.join("");
 
     }
-    reverseString1("koekje");
+    const outputOefening6 = reverseString1("koekje");
+// console.log(outputOefening6);
 
-    // OF
+
+
+// OF
 
 function reverseString2(string){
     let newString = "";
@@ -151,10 +153,7 @@ function reverseString2(string){
     return newString;
 }
 const output = reverseString2("koekje");
-console.log(output);
-
-
-
+// console.log(output);
 
 
 /* Opdracht 7 */
@@ -166,6 +165,23 @@ console.log(output);
 // "madam" geeft true
 // "vrienden" geeft false
 
+const string = "lepel"
+
+function reverseString7 (string){
+    const splitString = string.split("")
+    const reverseString = splitString.reverse();
+    return joinArray = reverseString.join("");
+}
+
+const outputOefening7 = reverseString1(string);
+// console.log(outputOefening7);
+
+
+if (string === outputOefening7){
+    console.log("true")
+} else {
+    console.log('false')
+}
 
 
 /* Opdracht 8 */
@@ -174,6 +190,14 @@ console.log(output);
 // ---- Verwachte uitkomsten:
 // "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
 // "Hans is zijn mondkapje vergeten" en "a" geeft 2
+
+
+
+
+
+
+
+
 
 
 
